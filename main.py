@@ -7,7 +7,7 @@ def print_questions(num1, num2):
 
 def print_answers(answers):
     for i in range (len(answers)):
-        print(f'{i}: answers[i]')
+        print(f'{i}: {answers[i]}')
 
 def main(n_questions, random_seed=None):
     random.seed(random_seed)
@@ -18,6 +18,7 @@ def main(n_questions, random_seed=None):
     answers = [a * b for a, b in zip(num_1, num_2)]
 
     print_questions(num_1, num_2)
+    print_answers(answers)
 
 
 if __name__ == '__main__':
