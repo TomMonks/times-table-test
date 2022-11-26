@@ -1,9 +1,13 @@
 import random
 
-
 def print_questions(num1, num2):
-    for a, b in zip(num1, num2):
-        print(f'{a} X {b} = ')
+    number = [i+1 for i in range(len(num1))]
+    for q, a, b in zip(number, num1, num2):
+        print(f'{q}: {a} X {b} = ')
+
+def print_answers(answers):
+    for i in range (len(answers)):
+        print(f'{i}: answers[i]')
 
 def main(n_questions, random_seed=None):
     random.seed(random_seed)
