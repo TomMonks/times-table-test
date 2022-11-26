@@ -1,0 +1,5 @@
+name: times_table
+channels:
+  - cond-forge
+dependencies:
+  - python=3.8.12
