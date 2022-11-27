@@ -3,3 +3,5 @@ channels:
   - cond-forge
 dependencies:
   - python=3.8.12
+  pip:
+  reportlab==3.6.12
